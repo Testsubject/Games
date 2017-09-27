@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8" />
-	<title>Gamedev Canvas Workshop</title>
+	<title>Breakout Game</title>
 	<style>
 	      * { padding: 0;margin: 0; }
 	      canvas { background: #eee; display: block; margin: 0 auto;
@@ -80,7 +80,7 @@ function drawBall() {
     ctx.beginPath();
     ctx.arc(x, y, ballRadius, 0,Math.PI*2);
     ctx.fillStyle = "#FF0000";
-    ctx.fill();
+    ctx.fill(); 
     ctx.closePath();
 }
 function drawPaddle() {

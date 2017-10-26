@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+Calculator
+</title>
+</head>
+<body>	
+<script type =text/javascript>
+var n = +prompt("Enter a value");
+var BR = "<br>";
+
+document.write("The square root is ", Math.sqrt(n), BR);
+document.write("The absolute value is ", Math.abs(n), BR);
+document.write("The next lowest whole number is ", n - 1, BR);
+document.write("The next highest whole number is ", n + 1, BR);
+
+var x = +prompt("Enter a second value");
+
+document.write("The highest number is ", Math.max(n, x), BR);
+document.write("The lowest number is ", Math.min(n, x));
+</script>
+</body>
+</html>

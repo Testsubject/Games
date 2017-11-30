@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+Number Guessing Game
+</title>
+<script type ="text/javascript">
+function guessingGame(tries=6) {
+    var BR = "<br/>";
+    var ES = "<es/>";
+    var number = Math.floor(Math.random() * 100) + 1;
+
+    while (tries > 0) {
+        tries -= 1;
+        guess = prompt("Test");
+	parseInt = (guess);
+
+        if(guess < number) {
+            document.write("You guessed too low! You guessed " + guess + BR);
+        }
+        else if(guess > number) {
+            document.write("You guessed too high! You guessed " + guess + BR);
+        }
+        else {
+            break;
+        }
+    }
+
+    if(guess === number) {
+        document.write("You got it correct!");
+    }
+
+    if(guess != number) {
+        document.write(" You got it wrong! The answer was " + number);
+    }
+}
+
+guessingGame();
+</script>
+</head>
+<body>	
+</body>
+</html>

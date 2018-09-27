@@ -5,7 +5,7 @@ $(document).ready(function() {
   });
 });
 
-// Scrolling
+// Scrolling Effect
 
 $(window).on("scroll", function() {
   if($(window).scrollTop()) {
@@ -14,4 +14,12 @@ $(window).on("scroll", function() {
   else {
     $('nav').removeClass('black');
   }
+});
+
+// Smooth Scrolling
+$('a').click(function(){
+  $('html, body').animate({
+      scrollTop: $( $.attr(this, 'href') ).offset().top
+  }, 400);
+  return false;
 });

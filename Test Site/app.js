@@ -1,12 +1,4 @@
-//Menu Toggle
-$(document).ready(function() {
-  $(".menu-icon").on("click", function() {
-    $("nav ul").toggleClass("showing");
-  });
-});
-
-// Scrolling Effect
-
+// Navbar effect
 $(window).on("scroll", function() {
   if($(window).scrollTop()) {
     $('nav').addClass('black');
@@ -16,10 +8,13 @@ $(window).on("scroll", function() {
   }
 });
 
-// Smooth Scrolling
+
+// Smooth scrolling to anchor
+const headerHeight = $(".menu").height() + 30;
+
 $('a').click(function(){
   $('html, body').animate({
-      scrollTop: $( $.attr(this, 'href') ).offset().top
+      scrollTop: $( $.attr(this, 'href') ).offset().top - headerHeight
   }, 400);
   return false;
 });

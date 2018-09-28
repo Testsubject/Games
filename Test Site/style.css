@@ -42,7 +42,7 @@ body {
 header {
       width: 100%;
       height: 100vh;
-      background-image: url(images/test7.jpg);
+      background-image: url(images/test8.jpg);
       background-size: cover;
 }
 
@@ -54,6 +54,11 @@ header {
       font-size: 20px;
       line-height: 30px;
       color: #1e272e;
+}
+
+#home{
+      background-image: url(images/logo.png);
+      background-repeat: no-repeat;
 }
 
 .logo {

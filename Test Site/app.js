@@ -8,7 +8,6 @@ $(window).on("scroll", function() {
   }
 });
 
-
 // Smooth scrolling to anchor
 const headerHeight = $(".menu").height() + 30;
 
